@@ -1,15 +1,232 @@
-*
-{
-    font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('./statics/fonts/Noto_Sans/NotoSans-Regular.eot');
+    src: url('./statics/fonts/Noto_Sans/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./statics/fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('./statics/fonts/Noto_Sans/NotoSans.svg#NotoSans') format('svg'),
+    url('./statics/fonts/Noto_Sans/NotoSans.ttf') format('truetype'),
+    url('./statics/fonts/Noto_Sans/NotoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url('./statics/fonts/iransans/eot/IRANSansWeb.eot'),
+    url('./statics/fonts/iransans/woff2/IRANSansWeb.woff2') format('woff2'),
+    url('./statics/fonts/iransans/ttf/IRANSansWeb.ttf') format('truetype'),
+    url('./statics/fonts/iransans/woff/IRANSansWeb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: IranSans, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.flex_containers
-{
+
+header {
+    position: relative;
+}
+
+.en_text {
+    font-family: NotoSans, serif !important;
+}
+
+#sphere_container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 0;
+    background: radial-gradient(ellipse at center, rgba(0, 148, 226, 0.4) 0%,
+    rgba(14, 143, 211, 0) 70%) 190px -107%;
+    background-size: 100% 300%;
+    z-index: -1;
+}
+
+.flex_container {
     display: flex;
 }
-#tp_hdr
-{
-    
+
+#tp_hdr {
+    width: 100%;
+    height: 50px;
+    background-color: #000717;
+    padding: 0 40px 0 40px;
+}
+
+#tp_hdr_cntct_inf_blk {
+    width: 55%;
+}
+
+.wht_clr {
+    color: white;
+}
+
+.flx_cntr_itm {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.spcf_spc_tp_hdr_elm {
+    justify-content: space-around;
+}
+
+#tp_hdr_cntct_inf_blk a h5 {
+    display: inline;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@keyframes textColor {
+    from {
+        color: white
+    }
+    to {
+        color: #fece42
+    }
+}
+
+#tp_hdr_cntct_inf_blk a h5:hover, #nav ul li a:hover {
+    color: #fece42;
+    animation-name: textColor;
+    animation-duration: 500ms;
+}
+
+@keyframes movement {
+    0% {
+        transform: translate(0px, 0);
+    }
+    100% {
+        transform: translate(-800px, 0);
+    }
+}
+
+@keyframes movement_2 {
+    0% {
+        transform: translate(800px, 0);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
+}
+
+#moving_bar {
+    width: 0;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+#moving_bar_2 {
+    animation-name: movement_2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+#moving_bar div {
+    padding-right: 40px;
+    font-size: 14px;
+
+}
+
+#moving_bar_2 div {
+    padding-right: 40px;
+    font-size: 14px;
+
+}
+
+.gld_clr {
+    display: inline;
+    color: #fece42;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+}
+
+#nav {
+    width: 50%;
+    height: 100px;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: auto;
+    width: 100%;
+}
+
+#nav ul li {
+    width: 16%;
+    text-align: center;
+    display: inline-block;
+
+}
+
+#logo {
+    width: 27%;
+    justify-content: flex-start;
+    padding-right: 30px;
+}
+
+#search {
+    width: 23%;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 39px;
+}
+
+.nav_prop {
+    display: inline;
+    margin-right: 5px;
+}
+
+#nav ul li a {
+    position: relative;
+}
+
+@keyframes move_to_down {
+    0% {
+        transform: translate(0px, 0px)
+    }
+    100% {
+        transform: translate(0px, 7px)
+    }
+}
+
+.second_nav_icon {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    z-index: -1;
+    color: #fece42ba;
+    animation-play-state: paused;
+    animation-name: move_to_down;
+    animation-timing-function: linear;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }

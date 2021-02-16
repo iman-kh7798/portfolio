@@ -18,13 +18,14 @@ export default (req, context) => {
 
     const helmet = Helmet.renderStatic();
 
-    return`<html lang="fa">
+    return`<html lang="fa" dir="rtl">
                 <head>
+                <meta charset="UTF-8">
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 <link rel="stylesheet" href="/main.css">
                 </head>
-                <body>
+                <body style="background-color: #000e2e">
                     <div id="root">${content}</div>
                     <script src="/bundle.js">
                     </script>
