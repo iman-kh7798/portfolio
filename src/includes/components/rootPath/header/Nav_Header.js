@@ -2,7 +2,7 @@ import React,{useEffect} from 'react';
 import image from '../../../statics/images/logo_big_00cf002a1_1679.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSearch, faShoppingCart,faChevronDown} from "@fortawesome/free-solid-svg-icons";
-import $ from 'jquery'
+//import $ from 'jquery'
 
 
 

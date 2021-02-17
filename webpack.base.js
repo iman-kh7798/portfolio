@@ -1,27 +1,37 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path=require('path')
+const webpack=require('webpack')
+
+
 
 module.exports = {
+    mode: "development",
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css',
             ignoreOrder: false,
         }),
+
+
     ],
+
     module: {
         rules: [
             {
                 test: /\.js$|jsx/,
                 use:[{
-                    loader: "babel-loader"
+                    loader: "babel-loader?compact=true",
+
                 }],
-                exclude: '/node_modules/'
+                include: path.resolve(__dirname, 'src'),
+                exclude: /node_modules\/(?!(three)\/).*/
             },
             {
                 test: /\.css$/i,
                 use: [
                     {
-                        loader: MiniCssExtractPlugin.loader,
+                        loader: MiniCssExtractPlugin.loader
                     },
                     'css-loader',
                 ],

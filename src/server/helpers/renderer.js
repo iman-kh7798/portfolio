@@ -21,12 +21,14 @@ export default (req, context) => {
     return`<html lang="fa" dir="rtl">
                 <head>
                 <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 <link rel="stylesheet" href="/main.css">
                 </head>
                 <body style="background-color: #000e2e">
                     <div id="root">${content}</div>
+                    <script src="/vendor.bundle.js"></script>
                     <script src="/bundle.js">
                     </script>
                 </body>
