@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 import On_Sphere_Contents from './On_Sphere_Contents'
 import * as THREE from 'three'
+import Btm_Sphere_Contents from "./Btm_Sphere_Contents";
 
 
 function Index (){
@@ -99,11 +100,14 @@ function Index (){
         cws_threeJs_sphere(convas);
     })
         return (
-            <section className='fll_wdth' style={{display:'flex'}}>
+            <section className='fll_wdth flex_container' style={{flexDirection:'column'}}>
+                <div className='flex_container' style={{width:'100%',height:'inherit',flexDirection:'row'}}>
                 <On_Sphere_Contents/>
                 <div id='sphere_container'>
                     <canvas width="1000" height="130" style={{width: '1000px', height: '130px'}} className='cws-sphere'/>
                 </div>
+                </div>
+                <Btm_Sphere_Contents/>
             </section>
         );
 }

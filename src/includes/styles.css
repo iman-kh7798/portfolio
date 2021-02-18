@@ -287,3 +287,46 @@ nav {
     background: #fece42;
     font-family: 'IranSans-light' !important;
 }
+#media_container
+{
+    flex-direction: row;
+    margin: 80px auto;
+    width: 90%;
+    height: 230px;
+
+}
+.media_container_child
+{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid transparent;
+    background:linear-gradient(to top,transparent 0%,transparent 70%,#1d72bd73 70%);
+
+}
+@keyframes boxShadow {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow: #1d72bd 0 0 20px 4px;
+    }
+}
+.media_container_child:hover
+{
+    animation-name: boxShadow;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    box-shadow: #1d72bd 0 0 20px 4px;
+}
+.media_container_child div
+{
+    padding-right: 20px;
+    border-radius: 2px;
+}
+.sample_icon
+{
+    color: #fece42;
+    margin: 20px 0px;
+    font-size: 60px;
+}
