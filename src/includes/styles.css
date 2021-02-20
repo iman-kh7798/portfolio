@@ -330,3 +330,55 @@ nav {
     margin: 20px 0px;
     font-size: 60px;
 }
+/*---------------------------------------//section ended//-----------------------------------*/
+#first_banner
+{
+    height: 570px;
+    flex-direction:row;
+    width:100%;
+}
+#banner_one_image
+{
+    background-image: url("./statics/images/8.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#first_banner_text{
+    color: white;
+    font-family: IranSans, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+}
+#banner_2
+{
+    height: 570px;
+    flex-direction: row;
+}
+#particle_container
+{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#second_banner_text
+{
+    color: white;
+    font-family: IranSans, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: inherit;
+    background-color: #011a50;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+}
