@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'IranSans-light';
     src: url('./statics/fonts/iransans/eot/IRANSansWeb_Light.eot'),
@@ -16,14 +17,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
 * {
     font-family: IranSans, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.fll_wdth
-{
+
+.fll_wdth {
     width: 100%;
 }
 
@@ -225,22 +227,21 @@ nav {
 
 
 /*starting section styles*/
-#section_title
-{
+#section_title {
     width: 50%;
     height: 600px;
     flex-direction: column;
     margin: 0 30px;
     justify-content: center;
 }
-#section_timmer
-{
+
+#section_timmer {
     width: 50%;
     height: 600px;
     margin: 0 30px;
 }
-#up_price
-{
+
+#up_price {
     font-family: IranSans, sans-serif;
     box-sizing: border-box;
     display: flex;
@@ -255,22 +256,23 @@ nav {
     margin: auto;
     background-color: #000e2ee6;
 }
-#nemoodar{
-    width:80%;
-    height:10px;
-    background-color:white;
-    margin-top:20px;
-    border-radius:8px;
+
+#nemoodar {
+    width: 80%;
+    height: 10px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
 }
-#nemoodar div
-{
-    width:30%;
-    height:100%;
-    background-color:red;
-    border-radius:0 8px 8px 0;
+
+#nemoodar div {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    border-radius: 0 8px 8px 0;
 }
-.top_btn
-{
+
+.top_btn {
     font-family: IranSans, sans-serif;
     padding: 0;
     box-sizing: border-box;
@@ -287,22 +289,23 @@ nav {
     background: #fece42;
     font-family: 'IranSans-light' !important;
 }
-#media_container
-{
+
+#media_container {
     flex-direction: row;
     margin: 80px auto;
     width: 90%;
     height: 230px;
 
 }
-.media_container_child
-{
+
+.media_container_child {
     width: 25%;
     height: 100%;
     border-right: 2px solid transparent;
-    background:linear-gradient(to top,transparent 0%,transparent 70%,#1d72bd73 70%);
+    background: linear-gradient(to top, transparent 0%, transparent 70%, #1d72bd73 70%);
 
 }
+
 @keyframes boxShadow {
     from {
         box-shadow: none;
@@ -311,41 +314,42 @@ nav {
         box-shadow: #1d72bd 0 0 20px 4px;
     }
 }
-.media_container_child:hover
-{
+
+.media_container_child:hover {
     animation-name: boxShadow;
     animation-iteration-count: 1;
     animation-duration: 500ms;
     animation-timing-function: linear;
     box-shadow: #1d72bd 0 0 20px 4px;
 }
-.media_container_child div
-{
+
+.media_container_child div {
     padding-right: 20px;
     border-radius: 2px;
 }
-.sample_icon
-{
+
+.sample_icon {
     color: #fece42;
-    margin: 20px 0px;
+    margin: 20px 0;
     font-size: 60px;
 }
+
 /*---------------------------------------//section ended//-----------------------------------*/
-#first_banner
-{
+#first_banner {
     height: 570px;
-    flex-direction:row;
-    width:100%;
+    flex-direction: row;
+    width: 100%;
 }
-#banner_one_image
-{
+
+#banner_one_image {
     background-image: url("./statics/images/8.jpg");
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-#first_banner_text{
+
+#first_banner_text {
     color: white;
     font-family: IranSans, sans-serif;
     margin: 0;
@@ -357,28 +361,170 @@ nav {
     flex-direction: column;
     padding: 0 100px;
 }
-#banner_2
-{
+
+#banner_2 {
+    background-image: url("./statics/images/bg_1920x1080_whiteworld-2.png");
+    background-color: #001440;
+    background-blend-mode: overlay;
     height: 570px;
     flex-direction: row;
 }
-#particle_container
-{
+
+#particle_container {
     width: 50%;
     justify-content: center;
     align-items: center;
 }
-#second_banner_text
-{
+
+#second_banner_text {
     color: white;
     font-family: IranSans, sans-serif;
     margin: 0;
     box-sizing: border-box;
     width: 50%;
     height: inherit;
-    background-color: #011a50;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 100px;
+}
+
+.foots {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    height: 300px;
+}
+
+#first_foots {
+    margin-top: 20px;
+}
+
+#first_foots:after {
+    position: absolute;
+    left: 15px;
+    content: '';
+    width: 100%;
+    border-top: 2px solid #1d72bd;
+}
+
+#first_foots:before {
+    content: '';
+    width: 14px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-top: 2px solid #1d72bd;
+    border-bottom: 2px solid #1d72bd;
+    border-left: 2px solid #1d72bd;
+    border-radius: 100px 0 0 100px;
+}
+
+#second_foot_left:before {
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    content: '';
+    width: 60%;
+    border-top: 2px solid #1d72bd;
+}
+
+#second_foot_right:before {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    content: '';
+    width: 98%;
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    border-top: 2px dashed #1d72bd;
+    border-right: 2px dashed #1d72bd;
+    border-bottom: 2px dashed #1d72bd;
+
+}
+
+.foots div {
+    padding: 20px;
+    text-align: justify;
+    width: 20%;
+    height: 200px;
+    background: url("./statics/images/bg_01.jpg") no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.foots p {
+    color: #779dd8;
+}
+
+.years {
+    position: absolute;
+    top: -27px;
+}
+
+.years:before {
+    content: '';
+    background: #fece42;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    z-index: 99;
+}
+
+.years:after {
+    content: '';
+    width: 3px;
+    height: 52px;
+    background: #fece42;
+    position: absolute;
+    right: 14px;
+}
+
+
+#circle_wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px dashed #1d72bd;
+    border-radius: 50%;
+}
+
+@keyframes movement_circle {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.circles {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: movement_circle;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.circles svg {
+    font-size: 35px;
+    color: #0c51ac;
+}
+
+#circle_content {
+    width: 50%;
+    height: inherit;
+    padding: 20px;
+    flex-direction: column;
 }
