@@ -1,35 +1,39 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGem,faAddressBook,faAddressCard,faNewspaper,faBell,faUser} from "@fortawesome/free-regular-svg-icons";
-
+import {faGem, faAddressBook, faAddressCard, faNewspaper, faBell, faUser} from "@fortawesome/free-regular-svg-icons";
+import firsticon from '../../../statics/images/002-laptop.svg'
+import secondicon from '../../../statics/images/003-cpu.svg'
+import thirdicon from '../../../statics/images/001-calendar.svg'
+import forthicon from '../../../statics/images/save-money.svg'
 
 function CircleContent() {
     return (
-        <div className='flex_container fll_wdth' style={{height:"570px",marginTop:"50px",backgroundColor:'#052260'}}>
-            <div style={{width:"50%",height:"inherit"}}>
-                <div id='circle_wrapper'>
-                    <div className='circles' style={{top:'-10%',right:'40%'}}>
+        <div className='flex_container fll_wdth'
+             style={{height: "620px", marginTop: "50px", backgroundColor: '#052260'}}>
+            <div className='flex_container' style={{width: "50%", height: "inherit"}}>
+                <div id='circle_wrapper' >
+                    <div className='circles' style={{top: '-10%', right: '40%'}}>
                         <FontAwesomeIcon icon={faGem}/>
                     </div>
-                    <div className='circles' style={{top:'45px',left:'0%'}}>
+                    <div className='circles' style={{top: '45px', left: '0%'}}>
                         <FontAwesomeIcon icon={faAddressBook}/>
                     </div>
-                    <div className='circles' style={{bottom:'45px',left:'0%'}}>
+                    <div className='circles' style={{bottom: '45px', left: '0%'}}>
                         <FontAwesomeIcon icon={faAddressCard}/>
                     </div>
-                    <div className='circles' style={{bottom:'-10%',right:'40%'}}>
+                    <div className='circles' style={{bottom: '-10%', right: '40%'}}>
                         <FontAwesomeIcon icon={faNewspaper}/>
                     </div>
-                    <div className='circles' style={{bottom:'45px',right:'0%'}}>
+                    <div className='circles' style={{bottom: '45px', right: '0%'}}>
                         <FontAwesomeIcon icon={faBell}/>
                     </div>
-                    <div className='circles' style={{top:'45px',right:'0%'}}>
+                    <div className='circles' style={{top: '45px', right: '0%'}}>
                         <FontAwesomeIcon icon={faUser}/>
                     </div>
                 </div>
             </div>
             <div className='flex_container wht_clr' id='circle_content'>
-                <h3 style={{color:'#fece42'}}>لورم ایپسوم</h3>
+                <h3 style={{color: '#fece42'}}>لورم ایپسوم</h3>
                 <br/>
                 <h1>لورم ایپسوم متن ساختگی با تولید
 
@@ -40,12 +44,27 @@ function CircleContent() {
                 <p>
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
 
-<br/>
+                    <br/>
                     استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
 
-     <br/>
+                    <br/>
                     در ستون و سطرآنچنان که لازم است
                 </p>
+                <br/>
+                <div className='flex_container' style={{justifyContent: "space-around", marginTop: '20px',textAlign:"center"}}>
+                    <div><img src={firsticon} style={{width: "80px"}} alt='sample icon'/>
+                    <h3 style={{marginTop:"10px"}}>لورم</h3>
+                    </div>
+                    <div><img src={secondicon} style={{width: "80px"}} alt='sample icon'/>
+                        <h3 style={{marginTop:"10px"}}>لورم</h3>
+                    </div>
+                    <div><img src={thirdicon} style={{width: "80px"}} alt='sample icon'/>
+                        <h3 style={{marginTop:"10px"}}>لورم</h3>
+                    </div>
+                    <div><img src={forthicon} style={{width: "80px"}} alt='sample icon'/>
+                        <h3 style={{marginTop:"10px"}}>لورم</h3>
+                    </div>
+                </div>
             </div>
         </div>
     );

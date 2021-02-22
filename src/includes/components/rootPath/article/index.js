@@ -4,6 +4,7 @@ import Banner2 from "./Banner_2";
 import LiningArea from "./Lining_area";
 import Charts from "./Charts";
 import CircleContent from "./Circle_Content";
+import ArticleEnd from "./article_end";
 function Index (){
         return (
             <div className='fll_wdth'>
@@ -11,6 +12,7 @@ function Index (){
                 <Banner2/>
                 <LiningArea/>
                 <CircleContent/>
+                <ArticleEnd/>
             </div>
         );
 }

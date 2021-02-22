@@ -495,13 +495,6 @@ nav {
     border-radius: 50%;
 }
 
-@keyframes movement_circle {
-    0% {
-        bottom: 0;
-        right: 0;
-    }
-}
-
 .circles {
     position: absolute;
     width: 100px;
@@ -511,10 +504,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: movement_circle;
-    animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
 }
 
 .circles svg {
@@ -527,4 +516,50 @@ nav {
     height: inherit;
     padding: 20px;
     flex-direction: column;
+}
+
+#article_end {
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    height: 570px;
+    padding: 40px;
+}
+#article_end_1
+{
+    height: 70px;
+    border-radius: 5px;
+}
+#article_end_2
+{
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#article_end_3
+{
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.article_end_wrapper
+{
+    padding-right: 20px;
+    align-items: center;
+    background-color: #001133;
+}
+#article_end_1 h2:before
+ {
+     content:'- ';
+
+ }
+#article_end_2 h2:before
+{
+    content:'- ';
+
+}
+#article_end_3 h2:before
+{
+    content:'- ';
+
 }
