@@ -65,7 +65,8 @@ function Banner2() {
             </div>
             <div id='second_banner_text'>
                 <h1>
-                    در این بخش یک افکت متحرک در شکل قرار دارد.
+                    در این بخش یک
+                    <br/>افکت متحرک در شکل قرار دارد.
                 </h1>
                 <br/>
                 <p>
@@ -75,9 +76,9 @@ function Banner2() {
                 </p>
                 <br/>
                 <br/>
-                <div>
-                    <img src={apple} alt='apple' style={{width:'150px'}}/>
-                    <img src={google} alt='google play' style={{width:'150px',marginRight:'50px'}}/>
+                <div id="image_brands">
+                    <img src={apple} alt='apple' style={{width:'35%'}}/>
+                    <img src={google} alt='google play' style={{width:'35%',marginRight:'10%'}}/>
                 </div>
             </div>
         </div>

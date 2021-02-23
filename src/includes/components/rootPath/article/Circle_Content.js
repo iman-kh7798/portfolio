@@ -8,9 +8,9 @@ import forthicon from '../../../statics/images/save-money.svg'
 
 function CircleContent() {
     return (
-        <div className='flex_container fll_wdth'
-             style={{height: "620px", marginTop: "50px", backgroundColor: '#052260'}}>
-            <div className='flex_container' style={{width: "50%", height: "inherit"}}>
+        <div id='circle-area' className='flex_container fll_wdth'
+             style={{marginTop: "50px", backgroundColor: '#052260'}}>
+            <div id='circle-area-shape' className='flex_container' style={{width: "50%", height: "auto"}}>
                 <div id='circle_wrapper' >
                     <div className='circles' style={{top: '-10%', right: '40%'}}>
                         <FontAwesomeIcon icon={faGem}/>
@@ -32,7 +32,7 @@ function CircleContent() {
                     </div>
                 </div>
             </div>
-            <div className='flex_container wht_clr' id='circle_content'>
+            <div className='flex_container wht_clr' id='circle_content' style={{margin:'20px 0px'}}>
                 <h3 style={{color: '#fece42'}}>لورم ایپسوم</h3>
                 <br/>
                 <h1>لورم ایپسوم متن ساختگی با تولید
@@ -52,16 +52,16 @@ function CircleContent() {
                 </p>
                 <br/>
                 <div className='flex_container' style={{justifyContent: "space-around", marginTop: '20px',textAlign:"center"}}>
-                    <div><img src={firsticon} style={{width: "80px"}} alt='sample icon'/>
+                    <div style={{width:"25%"}}><img src={firsticon} style={{width: "50%"}} alt='sample icon'/>
                     <h3 style={{marginTop:"10px"}}>لورم</h3>
                     </div>
-                    <div><img src={secondicon} style={{width: "80px"}} alt='sample icon'/>
+                    <div style={{width:"25%"}}><img src={secondicon} style={{width: "50%"}} alt='sample icon'/>
                         <h3 style={{marginTop:"10px"}}>لورم</h3>
                     </div>
-                    <div><img src={thirdicon} style={{width: "80px"}} alt='sample icon'/>
+                    <div style={{width:"25%"}}><img src={thirdicon} style={{width: "50%"}} alt='sample icon'/>
                         <h3 style={{marginTop:"10px"}}>لورم</h3>
                     </div>
-                    <div><img src={forthicon} style={{width: "80px"}} alt='sample icon'/>
+                    <div style={{width:"25%"}}><img src={forthicon} style={{width: "50%"}} alt='sample icon'/>
                         <h3 style={{marginTop:"10px"}}>لورم</h3>
                     </div>
                 </div>

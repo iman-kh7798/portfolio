@@ -15,7 +15,7 @@ function ArticleEnd() {
         })
     })
     return (
-        <div className='flex_container wht_clr'>
+        <div id='article_end_cntnr' className='flex_container wht_clr' style={{alignItems:"center"}}>
             <div id='article_end' className='flex_container' style={{overflow:'hidden'}}>
                 <h3 style={{color: '#fece42'}}>لورم ایپسوم</h3>
                 <br/>
@@ -67,8 +67,8 @@ function ArticleEnd() {
                     </div>
                 </div>
             </div>
-            <div>
-                <img src={rocket} style={{width:'600px'}} alt='rocket'/>
+            <div style={{width:'50%'}}>
+                <img src={rocket} style={{width:'100%',height:'auto'}} alt='rocket'/>
             </div>
         </div>
     );

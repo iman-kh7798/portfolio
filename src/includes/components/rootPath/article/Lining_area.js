@@ -9,6 +9,7 @@ function LiningArea() {
             <br/>
             <hr style={{width: '50px', margin: 'auto', color: "#fece42"}}/>
             <br/>
+            <div id='lining_area' style={{margin:'auto',width:'90%'}}>
             <div id='first_foots' className='foots flex_container'>
                 <div>
                     <span id='year_88' className='years'>
@@ -20,8 +21,8 @@ function LiningArea() {
                     </p>
                 </div>
                 <div>
-                    <span className='years'>
-                        <h4>1388</h4>
+                    <span id='year_88' className='years'>
+                        <h4>1389</h4>
                     </span>
                     <h3>لورم ایپسوم</h3>
                     <br/>
@@ -29,7 +30,7 @@ function LiningArea() {
                     </p>
                 </div>
                 <div>
-                    <span id='year_88' className='years'>
+                    <span className='years'>
                         <h4>1390</h4>
                     </span>
                     <h3>لورم ایپسوم</h3>
@@ -38,7 +39,7 @@ function LiningArea() {
                     </p>
                 </div>
                 <div>
-                    <span id='year_88' className='years'>
+                    <span className='years'>
                         <h4>1391</h4>
                     </span>
                     <h3>لورم ایپسوم</h3>
@@ -113,6 +114,7 @@ function LiningArea() {
                     <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                     </p>
                 </div>
+            </div>
             </div>
         </div>
     );
