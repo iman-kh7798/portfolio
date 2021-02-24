@@ -13,14 +13,25 @@ function TopHeader() {
                 $("#moving_bar,#moving_bar_2").css({'animation-play-state': 'paused'})
             }, 1000)
         })
-        $('#responsive_header').hover(()=>
+        const btn=document.getElementById('responsive_header')
+        const menu=document.getElementById('tp_hdr')
+        btn.addEventListener('click',()=>
         {
-            $('#tp_hdr').slideToggle('slow')
+            const attrib=menu.getAttribute("class")
+            if(attrib==='show_header')
+            {
+                menu.removeAttribute('class')
+            }
+            else
+            {
+                menu.setAttribute('class','show_header')
+            }
         })
     }, [])
     return (
         <div className='flex_container' style={{justifyContent:'center'}}>
-            <div id="tp_hdr" className='flex_container'>
+            <div  className='flex_container' style={{position:"relative",width:'100%'}}>
+                <div id="tp_hdr" style={{overflow:'hidden'}}>
                 <div id='tp_hdr_cntct_inf_blk' className='flex_container wht_clr flx_cntr_itm spcf_spc_tp_hdr_elm'
                      style={{flexWrap: 'wrap'}}>
                     <a href="#" style={{color:'white'}}><h5 className='en_text' dir='ltr' id='sss'>@iman.kh7798@gmail.com</h5><FontAwesomeIcon
@@ -50,8 +61,10 @@ function TopHeader() {
                         <div><p className="gld_clr">یوان:</p>3</div>
                     </div>
                 </div>
+                </div>
+                <div id='responsive_header'/>
             </div>
-            <div id='responsive_header'/>
+
         </div>
     );
 }

@@ -2,15 +2,25 @@ import React,{useEffect} from 'react';
 import image from '../../../statics/images/logo_black_blue_00d1002a1_1700.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronDown, faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import $ from 'jquery'
+
 
 
 function ResponsiveMenu() {
     useEffect(() => {
-        $('#responsive_nav_wrapper').hover(()=>{
-            $('#responsive_menu').animate({width:'toggle'});
+       const btn=document.getElementById('responsive_nav_wrapper')
+        const menu=document.getElementById('responsive_menu')
+        btn.addEventListener('click',()=>
+        {
+            const attrib=menu.getAttribute("class")
+            if(attrib==='active')
+            {
+                menu.removeAttribute('class')
+            }
+            else
+                {
+                    menu.setAttribute('class','active')
+                }
         })
-
     })
     return (
         <div id='responsive_menu'>

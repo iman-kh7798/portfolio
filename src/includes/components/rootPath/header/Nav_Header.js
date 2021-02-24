@@ -67,7 +67,7 @@ function NavHeader() {
                 <FontAwesomeIcon icon={faShoppingCart} className='wht_clr'
                                  style={{fontSize: '25px', marginLeft: '15px'}}/>
                 <FontAwesomeIcon icon={faSearch} className='wht_clr' style={{fontSize: '25px',marginLeft:'15px'}}/>
-                <a href='#' style={{display:'none'}} id='responsive_nav_wrapper'><FontAwesomeIcon icon={faBars} className='wht_clr' style={{fontSize: '25px'}}/></a>
+                <FontAwesomeIcon  style={{display:'none'}} id='responsive_nav_wrapper' icon={faBars} className='wht_clr' style={{fontSize: '25px'}}/>
             </div>
         </nav>
     );

@@ -60,6 +60,7 @@
     background-color: #000717;
     padding: 0 40px 0 40px;
 
+
 }
 
 #tp_hdr_cntct_inf_blk {
@@ -156,17 +157,23 @@ a {
     display: inline;
     color: #fece42;
 }
-#responsive_menu
-{
-    position: absolute;
-    width: 280px;
-    top: 0px;
-    height: auto;
+
+#responsive_menu {
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    top: 0;
+    z-index: 999;
+    height: 100%;
     min-height: 100px;
-    display: none;
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
+    transition: width 0.5s;
+}
+
+.active {
+    width: 280px !important;
 }
 
 nav {
@@ -208,9 +215,11 @@ nav {
     align-items: center;
     padding-left: 39px;
 }
-.blk_clr{
+
+.blk_clr {
     color: black !important;
 }
+
 .nav_prop {
     display: inline;
     margin-right: 5px;
@@ -368,7 +377,14 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+@keyframes movefromright {
+    from{transform: translate(1000px,0px)}
+    to{transform: translate(0px,0px)}
+}
+@keyframes movefromleft {
+    from{transform: translate(-1000px,0px)}
+    to{transform: translate(0px,0px)}
+}
 #first_banner_text {
     color: white;
     font-family: IranSans, sans-serif;
@@ -380,6 +396,23 @@ nav {
     justify-content: center;
     flex-direction: column;
     padding: 0 100px;
+    transform: translate(1000px,0px);
+
+}
+.movement_class_right
+{
+    animation-name: movefromright;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.movement_class_left
+{
+    animation-name: movefromleft;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 1s;
 }
 
 #banner_2 {
@@ -400,13 +433,13 @@ nav {
     color: white;
     font-family: IranSans, sans-serif;
     margin: 0;
-    box-sizing: border-box;
     width: 50%;
     height: inherit;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 100px;
+
 }
 
 .foots {
@@ -686,6 +719,11 @@ body {
 
 /*-------------------------------responsive time-----------------------------*/
 @media screen and (max-width: 1200px) {
+
+    #responsive_menu {
+        display: flex !important;
+    }
+
     #nav {
         display: none;
     }
@@ -701,13 +739,17 @@ body {
     #search {
         width: 50%;
     }
-    #responsive_nav_wrapper
-    {
+
+    #responsive_nav_wrapper {
         display: block !important;
     }
 }
 
 @media screen and (max-width: 992px) {
+    .movement_class_right
+    {
+        animation-name: none;
+    }
     .cws-sphere {
         width: 100%;
     }
@@ -745,9 +787,9 @@ body {
 
     #second_banner_text {
         text-align: center;
-        padding: 0px !important;
+        padding: 0 !important;
         align-items: center;
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin-top: 20px;
     }
 }
@@ -763,15 +805,16 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: translate(0,0) !important;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #sphere_container canvas
-    {
+    #sphere_container canvas {
         width: 600px;
         height: 600px;
     }
+
     #lining_area {
         border-right: 2px solid #0c51ac;
     }
@@ -785,7 +828,7 @@ body {
     #circle-area {
         height: auto;
         flex-wrap: wrap;
-        font-size: 2.4vw !important;
+        font-size: 2.5vw !important;
     }
 
     #circle-area > div {
@@ -881,12 +924,11 @@ body {
 }
 
 @media screen and (max-width: 690px) {
-    header {
-        position: relative;
-    }
 
     #tp_hdr {
-        display: none;
+        height: 0;
+        transition: height 0.5s;
+        position: relative;
     }
 
     #tp_hdr_cntct_inf_blk {
@@ -895,23 +937,30 @@ body {
 
     #mvmnt {
         width: 100%;
+        margin-top: 30px;
+    }
+
+    .show_header {
+        height: 100px !important;
     }
 
     #responsive_header {
         width: 20px;
         height: 20px;
-        background: black;
+        background: #000717;
         transform: rotate(45deg);
         position: absolute;
-        top: -10px;
+        bottom: -8px;
+        left: 50%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #sphere_container canvas{
+    #sphere_container canvas {
         width: 300px;
         height: 300px;
     }
+
     #input_box {
         width: 20%;
     }
@@ -946,6 +995,7 @@ body {
     #first_banner_text {
         padding: 5px;
         font-size: 2.5vw !important;
+
     }
 
     #first_banner_text a {
@@ -965,7 +1015,7 @@ body {
 
     .media_container_child > div {
         margin-bottom: 20px;
-    }
+     }
 
     #up_price {
         width: 80% !important;
@@ -992,9 +1042,7 @@ body {
     #logo img {
         width: 50% !important;
     }
-    #tp_hdr{
-        height: auto;
-    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -1005,6 +1053,9 @@ body {
     #search svg {
         font-size: 20px !important;
     }
-
+    #mvmnt
+    {
+        margin-top: 0;
+    }
 }
 

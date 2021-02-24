@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGem, faAddressBook, faAddressCard, faNewspaper, faBell, faUser} from "@fortawesome/free-regular-svg-icons";
 import firsticon from '../../../statics/images/002-laptop.svg'
@@ -11,7 +11,7 @@ function CircleContent() {
         <div id='circle-area' className='flex_container fll_wdth'
              style={{marginTop: "50px", backgroundColor: '#052260'}}>
             <div id='circle-area-shape' className='flex_container' style={{width: "50%", height: "auto"}}>
-                <div id='circle_wrapper' >
+                <div id='circle_wrapper'>
                     <div className='circles' style={{top: '-10%', right: '40%'}}>
                         <FontAwesomeIcon icon={faGem}/>
                     </div>
