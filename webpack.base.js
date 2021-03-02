@@ -5,7 +5,7 @@ const webpack=require('webpack')
 
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css',
@@ -21,7 +21,7 @@ module.exports = {
             {
                 test: /\.js$|jsx/,
                 use:[{
-                    loader: "babel-loader?compact=true",
+                    loader: "babel-loader",
 
                 }],
                 include: path.resolve(__dirname, 'src'),

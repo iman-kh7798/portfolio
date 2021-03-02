@@ -22,14 +22,13 @@ export default (req, context) => {
                 <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 <link rel="stylesheet" href="/main.css">
                 </head>
                 <body style="background-color: #000e2e">
                     <div id="root">${content}</div>
-                    <script src="/vendor.bundle.js"></script>
+                    
                     <script src="/bundle.js">
                     </script>
                 </body>

@@ -2,12 +2,15 @@
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "v14.15.1"
+  },
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "testing": "npm-run-all --parallel testing:*",
     "dev:build": "nodemon --watch build --exec node build/bundle.js",
-    "dev:build-server": "webpack --config webpack.server.js  --watch",
-    "dev:build-client": "webpack --config webpack.client.js  --watch",
+    "dev:build-server": "webpack --config webpack.server.js  --watch ",
+    "dev:build-client": "webpack --config webpack.client.js  --watch ",
     "testing:client": "webpack --config webpack.vendor.config.js",
     "testing:server": "webpack --config webpack.vendor.config.server.js"
   },
@@ -17,9 +20,9 @@
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
+    "@babel/register": "^7.13.8",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
@@ -27,9 +30,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@tinymce/tinymce-react": "^3.8.1",
     "atob": "^2.1.2",
-    "axios": "^0.21.0",
     "babel-loader": "^8.2.1",
-    "chart.js": "^2.9.4",
     "core-js": "^3.7.0",
     "css-loader": "^5.0.1",
     "express": "^4.17.1",
@@ -44,33 +45,21 @@
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.1",
     "react-app-polyfill": "^2.0.0",
-    "react-chartjs-2": "^2.11.1",
-    "react-cookie": "^4.0.3",
     "react-dom": "^17.0.1",
-    "react-easy-crop": "^3.3.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-gsap": "^2.2.1",
     "react-helmet": "^6.1.0",
     "react-particles-js": "^3.4.1",
-    "react-redux": "^7.2.2",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "react-select": "^3.1.0",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.7",
     "serialize-javascript": "^5.0.1",
     "three": "^0.125.2",
-    "universal-cookie": "^4.0.4",
-    "universal-cookie-express": "^4.0.3",
     "webpack": "^5.22.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3",
     "webpack-node-externals": "^2.5.2"
   },
-  "devDependencies": {
-    "@babel/register": "^7.12.13",
-    "browser-sync-webpack-plugin": "^2.3.0"
-  }
+  "devDependencies": {}
 }

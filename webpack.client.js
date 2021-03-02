@@ -18,10 +18,10 @@ const config = {
         new webpack.DefinePlugin({
             'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH),
         }),
-        new webpack.DllReferencePlugin({
-            context: __dirname,
-            manifest: path.join(__dirname, 'public', 'vendor-manifest.json')
-        }),
+        // new webpack.DllReferencePlugin({
+        //     context: __dirname,
+        //     manifest: path.join(__dirname, 'public', 'vendor-manifest.json')
+        // }),
         // new BrowserSyncPlugin({
         //     host: 'localhost',
         //     port: 3000,

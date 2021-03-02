@@ -31,7 +31,7 @@ function TopHeader() {
     return (
         <div className='flex_container' style={{justifyContent:'center'}}>
             <div  className='flex_container' style={{position:"relative",width:'100%'}}>
-                <div id="tp_hdr" style={{overflow:'hidden'}}>
+                <div id="tp_hdr" style={{overflow:'hidden'}} className='flex_container'>
                 <div id='tp_hdr_cntct_inf_blk' className='flex_container wht_clr flx_cntr_itm spcf_spc_tp_hdr_elm'
                      style={{flexWrap: 'wrap'}}>
                     <a href="#" style={{color:'white'}}><h5 className='en_text' dir='ltr' id='sss'>@iman.kh7798@gmail.com</h5><FontAwesomeIcon
@@ -41,7 +41,7 @@ function TopHeader() {
                                                                                        style={{transform: "rotate(136deg)"}}/></a>
                 </div>
                 <div id='mvmnt' className='flex_container spcf_wdth_tp_hdr_elm'
-                     style={{width: '100%', overflow: 'hidden'}}>
+                     style={{width: '45%', overflow: 'hidden'}}>
                     <div id='moving_bar_2' className='flex_container wht_clr flx_cntr_itm'
                          style={{justifyContent: 'flex-end'}}>
                         <div><p className="gld_clr">دلار:</p>3</div>
