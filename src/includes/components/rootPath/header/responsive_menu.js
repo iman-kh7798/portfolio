@@ -21,7 +21,11 @@ function ResponsiveMenu() {
                     menu.setAttribute('class','active')
                 }
         })
-    })
+        return()=>
+        {
+            removeEventListener("click", () => {})
+        }
+    },[])
     return (
         <div id='responsive_menu'>
             <img src={image} alt='logo' style={{margin: '20px auto'}}/>

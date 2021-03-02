@@ -1,9 +1,12 @@
+
+
+
 import React from "react";
 import Routes from "../../includes/Routes";
 import {StaticRouter} from "react-router-dom";
 import {renderToString} from "react-dom/server";
 //import {Provider} from 'react-redux'
-import serialize from 'serialize-javascript'
+//import serialize from 'serialize-javascript'
 import {renderRoutes} from 'react-router-config'
 import {Helmet} from 'react-helmet'
 
@@ -25,10 +28,11 @@ export default (req, context) => {
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 <link rel="stylesheet" href="/main.css">
+                <title>portfolio</title>
                 </head>
                 <body style="background-color: #000e2e">
                     <div id="root">${content}</div>
-                    
+                    <script src="/vendor.bundle.js"></script>
                     <script src="/bundle.js">
                     </script>
                 </body>

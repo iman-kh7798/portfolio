@@ -12,13 +12,13 @@ const config = {
         filename: "bundle.js",
         path: path.resolve(__dirname, 'build'),
     },
-    plugins:[
-        // new webpack.DllReferencePlugin({
-        //     context: __dirname,
-        //     manifest: path.join(__dirname, 'build', 'vendor-manifest.json')
-        // }),
-
-    ],
+    // plugins:[
+    //     new webpack.DllReferencePlugin({
+    //         context: __dirname,
+    //         manifest: path.join(__dirname, 'build', 'vendor-manifest.json')
+    //     }),
+    //
+    // ],
     externals: [webpackNodeExternals()]
 };
 

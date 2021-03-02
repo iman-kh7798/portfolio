@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        vendor: ['lodash', 'react', 'axios', 'Three', 'jquery','react-cookie','react-redux','redux','react-dom']
+        vendor: ['lodash', 'react', 'Three', 'jquery','react-dom']
     },
     output: {
         filename: 'vendor.bundle.js',

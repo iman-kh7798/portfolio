@@ -25,7 +25,7 @@ function OnSphereContents() {
 
         startTime();
 
-    })
+    },[])
     return (
         <React.Fragment>
             <div id='section_title' className=' flex_container wht_clr'>

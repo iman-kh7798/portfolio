@@ -53,7 +53,7 @@ function Banner2() {
         };
         image.src = steve
 
-    })
+    },[])
     return (
         <div id='banner_2' className='flex_container fll_wdth'>
             <div id='particle_container' className='flex_container'>
