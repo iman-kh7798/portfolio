@@ -13,16 +13,16 @@ function RightestSideFooter() {
             </h5>
             <div className="flex_container" style={{justifyContent:'space-around',marginTop:'40px'}}>
                 <div className='icon_wrapper_parent'>
-                    <FontAwesomeIcon icon={faAddressBook} className="icon_wrapper"/>
+                    <FontAwesomeIcon icon={faAddressBook} style={{width:'25px',height:'25px'}} className="icon_wrapper"/>
                 </div>
                 <div className='icon_wrapper_parent'>
-                    <FontAwesomeIcon icon={faAddressBook} className="icon_wrapper"/>
+                    <FontAwesomeIcon icon={faAddressBook} style={{width:'25px',height:'25px'}} className="icon_wrapper"/>
                 </div>
                 <div className='icon_wrapper_parent'>
-                    <FontAwesomeIcon icon={faAddressBook} className="icon_wrapper"/>
+                    <FontAwesomeIcon icon={faAddressBook} style={{width:'25px',height:'25px'}} className="icon_wrapper"/>
                 </div>
                 <div className='icon_wrapper_parent'>
-                    <FontAwesomeIcon icon={faAddressBook} className="icon_wrapper"/>
+                    <FontAwesomeIcon icon={faAddressBook} style={{width:'25px',height:'25px'}} className="icon_wrapper"/>
                 </div>
 
             </div>

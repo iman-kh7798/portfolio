@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import Routes from "../../includes/Routes";
 import {StaticRouter} from "react-router-dom";
@@ -23,6 +20,7 @@ export default (req, context) => {
 
     return`<html lang="fa" dir="rtl">
                 <head>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 ${helmet.title.toString()}

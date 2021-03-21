@@ -12,7 +12,7 @@ function LeftSideFooter(){
                 <div style={{width:'100%',height:'50px',position:'relative'}}>
                     <input id='input_text_box' placeholder='متن پیام' type='text' style={{backgroundColor: '#ffffff1a',borderColor: '#ffffff1a',height:'inherit',
                     width:'80%',borderRadius:'0px 2px 2px 0px',borderLeft:'none'}}/>
-                    <FontAwesomeIcon id='input_box_svg' icon={faEnvelope} style={{position:'absolute'}}/>
+                    <FontAwesomeIcon id='input_box_svg' icon={faEnvelope} style={{position:'absolute',width:'28px',height:'28px'}}/>
                     <input value=' ' id='input_box' type='submit'/>
                 </div>
             </div>

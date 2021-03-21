@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faEnvelope, faPhone, faPencilAlt} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faPencilAlt, faPhone} from '@fortawesome/free-solid-svg-icons'
 import $ from 'jquery'
 
 
@@ -38,14 +38,12 @@ function TopHeader() {
                 <div id="tp_hdr" style={{overflow: 'hidden'}} className='flex_container'>
                     <div id='tp_hdr_cntct_inf_blk' className='flex_container wht_clr flx_cntr_itm spcf_spc_tp_hdr_elm'
                          style={{flexWrap: 'wrap'}}>
-                        <a href="#" style={{color: 'white'}}><h5 className='en_text' dir='ltr'
-                                                                 id='sss'>@iman.kh7798@gmail.com</h5><FontAwesomeIcon
-                            icon={faEnvelope}/></a>
+                        <a href="#" style={{color: 'white'}}><h5 className='en_text' dir='ltr'>
+                            @iman.kh7798@gmail.com</h5><FontAwesomeIcon style={{width:'17px',height:'17px'}} icon={faEnvelope}/></a>
                         <a href='#' style={{color: 'white'}}><h5>تماس با ما</h5><FontAwesomeIcon
-                            icon={faPencilAlt}/></a>
-                        <a href='#' style={{color: 'white'}}><h5 className='en_text'>09120000+</h5><FontAwesomeIcon
-                            icon={faPhone}
-                            style={{transform: "rotate(136deg)"}}/></a>
+                            style={{width:'17px',height:'17px'}}  icon={faPencilAlt}/></a>
+                        <a href='#' style={{color: 'white'}}><h5 className='en_text'>09120000+</h5><FontAwesomeIcon icon={faPhone}
+                            style={{transform: "rotate(136deg)",width:'17px',height:'17px'}}/></a>
                     </div>
                     <div id='mvmnt' className='flex_container spcf_wdth_tp_hdr_elm'
                          style={{width: '45%', overflow: 'hidden'}}>

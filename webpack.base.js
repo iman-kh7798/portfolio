@@ -5,7 +5,7 @@ const webpack=require('webpack')
 
 
 module.exports = {
-    mode: "production",
+    mode: "development",
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css',

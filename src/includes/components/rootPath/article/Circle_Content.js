@@ -13,22 +13,22 @@ function CircleContent() {
             <div id='circle-area-shape' className='flex_container' style={{width: "50%", height: "auto"}}>
                 <div id='circle_wrapper'>
                     <div className='circles' style={{top: '-10%', right: '40%'}}>
-                        <FontAwesomeIcon icon={faGem}/>
+                        <FontAwesomeIcon icon={faGem} style={{width:'35px',height:'35px'}}/>
                     </div>
                     <div className='circles' style={{top: '45px', left: '0%'}}>
-                        <FontAwesomeIcon icon={faAddressBook}/>
+                        <FontAwesomeIcon icon={faAddressBook} style={{width:'35px',height:'35px'}}/>
                     </div>
                     <div className='circles' style={{bottom: '45px', left: '0%'}}>
-                        <FontAwesomeIcon icon={faAddressCard}/>
+                        <FontAwesomeIcon icon={faAddressCard} style={{width:'35px',height:'35px'}}/>
                     </div>
                     <div className='circles' style={{bottom: '-10%', right: '40%'}}>
-                        <FontAwesomeIcon icon={faNewspaper}/>
+                        <FontAwesomeIcon icon={faNewspaper} style={{width:'35px',height:'35px'}}/>
                     </div>
                     <div className='circles' style={{bottom: '45px', right: '0%'}}>
-                        <FontAwesomeIcon icon={faBell}/>
+                        <FontAwesomeIcon icon={faBell} style={{width:'35px',height:'35px'}}/>
                     </div>
                     <div className='circles' style={{top: '45px', right: '0%'}}>
-                        <FontAwesomeIcon icon={faUser}/>
+                        <FontAwesomeIcon icon={faUser} style={{width:'35px',height:'35px'}}/>
                     </div>
                 </div>
             </div>

@@ -26,37 +26,37 @@ function NavHeader() {
                 <ul>
                     <li>
                         <a href='#' style={{color:"white"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>صفحه اصلی</h4>
                         </a>
                     </li>
                     <li>
                         <a href='#' style={{color:"white"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>صفحه ها</h4>
                         </a>
                     </li>
                     <li>
                         <a href='#' style={{color:"white"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>نمونه ها</h4>
                         </a>
                     </li>
                     <li>
                         <a href='#' style={{color:"white"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>وبلاگ</h4>
                         </a>
                     </li>
                     <li>
                         <a href='#' style={{color:"white"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>فروشگاه</h4>
                         </a>
                     </li>
                     <li>
                         <a href='#' style={{color:"white"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             {/*<FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}} className='second_nav_icon'/>*/}
                             <h4 className='nav_prop'>ارتباط با ما</h4>
                         </a>
@@ -65,9 +65,9 @@ function NavHeader() {
             </div>
             <div id='search' className='flex_container'>
                 <FontAwesomeIcon icon={faShoppingCart} className='wht_clr'
-                                 style={{fontSize: '25px', marginLeft: '15px'}}/>
-                <FontAwesomeIcon icon={faSearch} className='wht_clr' size='xs' style={{fontSize: '25px',marginLeft:'15px'}}/>
-                <FontAwesomeIcon id='responsive_nav_wrapper' icon={faBars} className='wht_clr' style={{fontSize: '25px',display:'none'}}/>
+                                 style={{width: '25px', marginLeft: '15px',height:'25px'}}/>
+                <FontAwesomeIcon icon={faSearch} className='wht_clr' size='xs' style={{width: '25px',marginLeft:'15px',height:'25px'}}/>
+                <FontAwesomeIcon id='responsive_nav_wrapper' icon={faBars} className='wht_clr' style={{width: '25px',display:'none',height:'25px'}}/>
             </div>
         </nav>
     );

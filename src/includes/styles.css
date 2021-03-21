@@ -1,3 +1,9 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
 @font-face {
     font-family: 'IranSans';
     src: url('./statics/fonts/iransans/eot/IRANSansWeb.eot'),
@@ -38,6 +44,7 @@
     width: 100%;
     position: absolute;
     top: 0;
+    left: 0;
     margin: 0 0 0 0;
     background: radial-gradient(ellipse at center, rgba(0, 148, 226, 0.4) 0%,
     rgba(14, 143, 211, 0) 30%) 190px -96%;
@@ -108,18 +115,22 @@ a {
 
 @keyframes movement {
     0% {
+        -ms-transform: translate(0px, 0);
         transform: translate(0px, 0);
     }
     100% {
+        -ms-transform: translate(-800px, 0);
         transform: translate(-800px, 0);
     }
 }
 
 @keyframes movement_2 {
     0% {
+        -ms-transform: translate(800px, 0);
         transform: translate(800px, 0);
     }
     100% {
+        -ms-transform: translate(0px, 0);
         transform: translate(0px, 0);
     }
 }
@@ -130,15 +141,29 @@ a {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-play-state: paused;
+
+
+
+
+    -ms-animation-duration: 10s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-name:movement;
+    -ms-animation-iteration-count: infinite;
+
 }
+
 
 #moving_bar_2 {
     animation-name: movement_2;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-play-state: paused;
+
+
+    -ms-animation-duration: 10s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-name:movement_2;
+    -ms-animation-iteration-count: infinite;
 }
 
 #moving_bar div {
@@ -329,7 +354,7 @@ nav {
 
 .media_container_child {
     width: 25%;
-    height: 100%;
+    height: auto;
     border-right: 2px solid transparent;
     background: linear-gradient(to top, transparent 0%, transparent 70%, #1d72bd73 70%);
 
@@ -798,7 +823,9 @@ body {
     #banner_one_image {
         display: none;
     }
-
+#first_banner_text_wrapper hr{
+    margin: auto;
+}
     #first_banner_text {
         width: 100%;
         text-align: center;
@@ -810,6 +837,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    #first_banner{
+        height: auto;
+        margin-bottom: 20px;
+    }
     #sphere_container canvas {
         width: 600px;
         height: 600px;
@@ -954,12 +985,16 @@ body {
         left: 50%;
     }
 }
+.media_container_child{
+    height: 25%;
+}
 
 @media screen and (max-width: 600px) {
     #sphere_container canvas {
         width: 300px;
         height: 300px;
     }
+
 
     #input_box {
         width: 20%;
@@ -1000,11 +1035,12 @@ body {
 
     #first_banner_text a {
         width: 20% !important;
+        margin: auto;
     }
 
     #media_container {
         flex-wrap: wrap;
-        height: auto;
+        height: 400px;
     }
 
     .media_container_child {

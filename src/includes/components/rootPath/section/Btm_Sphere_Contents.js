@@ -8,28 +8,28 @@ function BtmSphereContents() {
         <div id='media_container' className="flex_container wht_clr">
             <div className='media_container_child'>
                 <div className='fll_wdth' style={{height:'100%',backgroundColor:'#000e2e'}}>
-                    <FontAwesomeIcon icon={faGem} className='sample_icon'/>
+                    <FontAwesomeIcon icon={faGem} style={{width:'60px',height:'60px'}} className='sample_icon'/>
                     <h3>لورم اپسیوم</h3><br/>
                     <p>این یک متن ساختگی می باشد.</p>
                 </div>
             </div>
             <div className='media_container_child'>
                 <div className='fll_wdth' style={{height:'100%',backgroundColor:'#000e2e'}}>
-                    <FontAwesomeIcon icon={faAddressBook} className='sample_icon'/>
+                    <FontAwesomeIcon icon={faAddressBook} style={{width:'60px',height:'60px'}} className='sample_icon'/>
                     <h3>لورم اپسیوم</h3><br/>
                     <p>این یک متن ساختگی می باشد.</p>
                 </div>
             </div>
             <div className='media_container_child'>
                 <div className='fll_wdth' style={{height:'100%',backgroundColor:'#000e2e'}}>
-                    <FontAwesomeIcon icon={faCalendar} className='sample_icon'/>
+                    <FontAwesomeIcon icon={faCalendar} style={{width:'60px',height:'60px'}} className='sample_icon'/>
                     <h3>لورم اپسیوم</h3><br/>
                     <p>این یک متن ساختگی می باشد.</p>
                 </div>
             </div>
             <div className='media_container_child'>
                 <div className='fll_wdth' style={{height:'100%',backgroundColor:'#000e2e'}}>
-                    <FontAwesomeIcon icon={faVenusMars} className='sample_icon'/>
+                    <FontAwesomeIcon icon={faVenusMars} style={{width:'60px',height:'60px'}} className='sample_icon'/>
                     <h3>لورم اپسیوم</h3><br/>
                     <p>این یک متن ساختگی می باشد.</p>
                 </div>

@@ -34,42 +34,42 @@ function ResponsiveMenu() {
                 <ul style={{width: '100%'}}>
                     <li>
                         <a href='#' style={{color: "black"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>صفحه اصلی</h4>
                         </a>
                     </li>
                     <hr style={{width: '100%', borderBottom: 'none', borderColor: '#00000029', margin: "5px 0"}}/>
                     <li>
                         <a href='#' style={{color: "black"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>صفحه ها</h4>
                         </a>
                     </li>
                     <hr style={{width: '100%', borderBottom: 'none', borderColor: '#00000029', margin: "5px 0"}}/>
                     <li>
                         <a href='#' style={{color: "black"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>نمونه ها</h4>
                         </a>
                     </li>
                     <hr style={{width: '100%', borderBottom: 'none', borderColor: '#00000029', margin: "5px 0"}}/>
                     <li>
                         <a href='#' style={{color: "black"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>وبلاگ</h4>
                         </a>
                     </li>
                     <hr style={{width: '100%', borderBottom: 'none', borderColor: '#00000029', margin: "5px 0"}}/>
                     <li>
                         <a href='#' style={{color: "black"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             <h4 className='nav_prop'>فروشگاه</h4>
                         </a>
                     </li>
                     <hr style={{width: '100%', borderBottom: 'none', borderColor: '#00000029', margin: "5px 0"}}/>
                     <li>
                         <a href='#' style={{color: "black"}}>
-                            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}}/>
+                            <FontAwesomeIcon icon={faChevronDown} style={{width: '12px',height:'12px'}}/>
                             {/*<FontAwesomeIcon icon={faChevronDown} style={{fontSize: '12px'}} className='second_nav_icon'/>*/}
                             <h4 className='nav_prop'>ارتباط با ما</h4>
                         </a>
@@ -80,7 +80,7 @@ function ResponsiveMenu() {
             <div className='flex_container' style={{width: '100%', justifyContent: 'center'}}>
                 <input type='text' style={{height: '30px', margin: '30px 0px', padding: '10px'}}/>
                 <span style={{position:'relative'}}>
-                    <FontAwesomeIcon style={{position:'absolute',left:"12px",top:'37px'}} icon={faEnvelope}/>
+                    <FontAwesomeIcon style={{position:'absolute',left:"12px",top:'37px',width: '12px',height:'12px'}} icon={faEnvelope}/>
                     <input type="button" style={{height: '30px', margin: '30px 0px',width:'40px',backgroundColor:'#0c51ac',borderRadius:'5px 0 0 5px',border:'none'}}/>
                 </span>
             </div>
