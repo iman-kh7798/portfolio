@@ -7,5 +7,5 @@ follow this:https://shielded-harbor-29631.herokuapp.com
 1-open cmd and go to the cloned folder\
 2-run "npm install"\
 3-run "npm run dev"\
-4-open your browser and go to "localhost:3000"\
+4-open your browser and go to "localhost:3000"
 
