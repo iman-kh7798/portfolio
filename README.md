@@ -1,6 +1,6 @@
 # execution
 this is the right code if you are interested, you can open the url below and see the result!!!\
-follow this:https://shielded-harbor-29631.herokuapp.com/ \n
+follow this:https://shielded-harbor-29631.herokuapp.com
 
 
 # clone localy
